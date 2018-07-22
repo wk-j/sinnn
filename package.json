@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel --no-cache client/index.html"
+    "watch": "parcel watch client/index.html -d src/Sinnn/wwwroot --public-url /",
+    "build": "parcel build client/index.html -d src/Sinnn/wwwroot --public-url /"
   },
   "author": "",
   "license": "ISC",
