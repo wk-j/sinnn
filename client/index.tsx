@@ -33,6 +33,7 @@ export class App extends React.Component<{}, State> {
             content: ""
         }
     }
+
     removeSpace(input: string) {
         var lines = input.split('\n')
         var space = lines.map(x => x.match(/^\s+/g)).map(x => x === null ? 0 : x[0].length)
@@ -49,7 +50,6 @@ export class App extends React.Component<{}, State> {
     }
 
     onClick = (e) => {
-        console.log("click")
         var content = this.state.content
         var newContent = this.removeSpace(content)
         this.setState({
@@ -58,11 +58,12 @@ export class App extends React.Component<{}, State> {
     }
 
     render() {
+        const language = "csharp"
         return (
             <ContainerDiv onClick={this.onClick}>
-                <MonacoEditor onChange={this.onChange} value={this.state.content} options={options} language="csharp" width="600" theme="vs-dark"></MonacoEditor>
+                <MonacoEditor onChange={this.onChange} value={this.state.content} options={options} language={language} width="600" theme="vs-dark"></MonacoEditor>
             </ContainerDiv>
-        );
+        )
     }
 }
 
