@@ -1,24 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <PackAsTool>true</PackAsTool>
-    <IsPackable>true</IsPackable>
-    <ToolCommandName>wk-sinnn</ToolCommandName>
-    <Version>0.1.0</Version>
-    <PackageId>wk.Sinnn</PackageId>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <IsPackable>true</IsPackable>
+        <ToolCommandName>wk-sinnn</ToolCommandName>
+        <Version>0.2.0</Version>
+        <PackageId>wk.Sinnn</PackageId>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="wwwroot/*" />
-  </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="wwwroot/*" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
 
 </Project>
